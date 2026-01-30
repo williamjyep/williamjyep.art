@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">williamjyep.art</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="classes.html" class="nav-link active">Classes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="classes-container">
+        <div class="classes-header">
+            <h1>My Art Classes</h1>
+        </div>
+        
+        <div class="class-info-section">
+            <div class="class-info-content">
+                <div class="class-info-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Art Class">
+                </div>
+                <div class="class-info-text">
+                    <p>Welcome to my art classes! Whether you're a beginner or an experienced artist, I offer personalized instruction tailored to your skill level and goals. My classes cover a variety of techniques including painting, drawing, digital art, and more. I'm passionate about helping students develop their unique artistic voice and build confidence in their creative abilities. Each class is designed to be engaging, supportive, and inspiring. Let's create something beautiful together!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="class-form-section">
+            <h2>Interested in Classes?</h2>
+            <p>Fill out the form below to express your interest, and I'll get back to you soon!</p>
+            <form id="classForm" class="class-form">
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentCount">Number of Students *</label>
+                    <input type="number" id="studentCount" name="studentCount" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentAge">Student Age *</label>
+                    <input type="text" id="studentAge" name="studentAge" placeholder="e.g., 8-12 years old" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Additional Comments</label>
+                    <textarea id="comment" name="comment" rows="5" placeholder="Tell me more about what you're looking for..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 williamjyep.art. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

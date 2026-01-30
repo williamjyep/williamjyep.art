@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">williamjyep.art</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="classes.html" class="nav-link">Classes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="portfolio-container">
+        <h1>My Portfolio</h1>
+        
+        <div class="portfolio-grid">
+            <!-- EDIT PORTFOLIO 1 -->
+            <div class="portfolio-card" onclick="openPortfolio(1)">
+                <div class="portfolio-thumbnail">
+                    <img src="Media/meow.jpg" alt="Portfolio 1">
+                </div>
+                <h3>Digital Illustrations</h3>
+                <p>Click to view details</p>
+            </div>
+
+            <!-- EDIT PORTFOLIO 2 -->
+            <div class="portfolio-card" onclick="openPortfolio(2)">
+                <div class="portfolio-thumbnail">
+                    <img src="Media/PRT2.png" alt="Portfolio 2">
+                </div>
+                <h3>Animations</h3>
+                <p>Click to view details</p>
+            </div>
+
+            <!-- EDIT PORTFOLIO 3 -->
+            <div class="portfolio-card" onclick="openPortfolio(3)">
+                <div class="portfolio-thumbnail">
+                    <img src="Media/IMG_0835.PNG" alt="Portfolio 3">
+                </div>
+                <h3>Traditional Art</h3>
+                <p>Click to view details</p>
+            </div>
+    </main>
+
+    <!-- Portfolio Detail Modal -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePortfolio()">&times;</span>
+            <div id="modal-body">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
