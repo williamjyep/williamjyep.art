@@ -696,9 +696,20 @@ body {
 }
 
 .class-info-text p {
-    font-size: 1.1rem;
-    color: #d3c9cf;
+    font-size: 1.3rem;
+    color: #e8e8ff;
     line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.class-info-text .chinese-text {
+    font-size: 1rem;
+    color: #c0b8ff;
+    line-height: 1.6;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(102, 126, 234, 0.2);
+    font-style: italic;
 }
 
 /* Form Section */
