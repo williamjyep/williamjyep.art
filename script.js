@@ -32,6 +32,7 @@ let portfolioData = {
             "Media/reflect.mp4",
             "Media/Bluejay2023.mp4",
             "Media/FINAL_Animation_Demo.mp4",
+            "Media/robot_walk.mp4",
         ]
     },
     3: {
